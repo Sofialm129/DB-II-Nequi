@@ -4,7 +4,7 @@ This repository contains the deliverables for Workshop No. 1 of the Databases II
 
 ---
 
-## 📌 Methodology and Deliverables
+## Methodology and Deliverables
 
 ### 1. Business Model Canvas
 
@@ -49,18 +49,10 @@ Example:
 
 > As a user, I want to check my account balance so that I can keep track of my finances.
 
-Full list of user stories is included in the folder: `/docs/User_Stories/`.
-
 ### 4. Initial Database Architecture
 
 - A high-level Entity-Relationship (ER) model was designed considering scalability and modularity.
 - Main entities include: User, Account, Transaction, Device, Authentication, Loan, Support.
 - Relationships between entities have been defined based on real-world financial operations.
 - Data flow diagram and a relational schema are included to illustrate system dynamics.
-
-Refer to `/diagrams/ER_Model.png` and `/docs/Entity_Descriptions.pdf` for full architecture and rationale.
-
----
-
-## 🗂 Repository Structure
 
