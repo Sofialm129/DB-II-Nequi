@@ -24,20 +24,23 @@ We present the Business Model Canvas for Nequi as a digital financial services p
 
 #### Functional Requirements
 
-- User registration and authentication
-- Balance inquiry and transaction history
-- Transfers, bill payments, and mobile top-ups
-- Credit application and approval process
-- Support ticket management
+- User registration
+- Account and Balance Management
+- Transaction Management
+- Funds Validation
+- Transfer Control
+-  Data Audit
+- Support for Multiple Devices/Sessions
 
 #### Non-Functional Requirements
 
-- High availability and reliability
-- Scalability to handle millions of users
-- Low-latency query execution
-- Data security and privacy
-- Real-time data ingestion
-- Distributed architecture for multi-location access
+- Performance
+- Scalability
+- Availability
+- Security
+- Data Integrity
+- Audit and Traceability
+- Maintainability
 
 ### 3. User Stories
 
