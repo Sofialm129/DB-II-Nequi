@@ -27,7 +27,6 @@ This work builds on the foundations of Workshop 1 and integrates improvements in
 
 ### 4. **Workshop 1 Improvements**
 - Revised entity-relationship model (ERD).
-- Refined user stories and business logic.
 - Additions to the Money Management module (pocket, cushion, card).
 - Enhancements to the Device and Movement entities.
 
