@@ -26,9 +26,12 @@ This work builds on the foundations of Workshop 1 and integrates improvements in
 - Each query includes an explanation of its purpose and the business insight it provides.
 
 ### 4. **Workshop 1 Improvements**
-- Revised entity-relationship model (ERD).
+- The new name of our project is KINE, which is inspired by NEQUI.
+- The estimation and priority metrics for the user stories are explained.
+- The information sources for KINE are added: the app, ATMs, banking correspondents, and companies.
+- Entity-Relationship Model (ERD) reviewed and completed up to step 10 of the ontology.
 - Additions to the Money Management module (pocket, cushion, card).
-- Enhancements to the Device and Movement entities.
+- Improvements to the Device and Transaction entities.
 
 ---
 
@@ -36,11 +39,7 @@ This work builds on the foundations of Workshop 1 and integrates improvements in
 
 | Component                      | Technology            | Purpose                                       |
 |-------------------------------|------------------------|-----------------------------------------------|
-| API & Microservices           | Java Spring Boot       | Service orchestration and business logic      |
 | Relational Database           | PostgreSQL             | Structured data (users, accounts, movements)  |
 | NoSQL Database                | MongoDB                | Semi-structured support data                  |
-| ETL Pipeline                  | Python + Pandas        | Data extraction and transformation            |
-| Data Warehouse                | Google BigQuery        | Historical data storage and querying          |
-| BI Tool                       | Google Data Studio     | Dashboards and report visualization           |
 
 
