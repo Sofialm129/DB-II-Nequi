@@ -30,29 +30,16 @@ This project addresses Workshop 3, focused on Nequi, a digital financial platfor
 
 ##  Distributed Database Design
 
-###  Proposed Distributed Architecture
+A distributed database was chosen instead of a parallel database because:
 
-A **distributed architecture** is proposed for Nequi, based on:
+- Nequi mainly performs OLTP operations (transfers, payments, balance checks) requiring real-time processing and high availability.
+- Parallel databases are better suited for OLAP workloads with massive batch queries, which is not Kine’s primary use case.
+- A distributed architecture allows:
+  - Geographic replication for regional availability.
+  - Separation of hot data (recent transactions) from cold data (historical archives) for regulatory compliance.
+  - Horizontal scaling to handle millions of users without a single point of failure.
 
-- **Polyglot Persistence:**
-  - **PostgreSQL** → For critical relational data: accounts, transactions, credits.
-  - **MongoDB** → For semi-structured data: support, PQR, logs.
-
-- **Geographical replication:**
-  - Nodes distributed in Bogotá, Medellín, and abroad.
-  - High availability in case of regional failures.
-
-- **Horizontal partitioning (Sharding):**
-  - PostgreSQL partitioned by `account_id` or region.
-  - MongoDB sharded by `user_id`.
-
-- **ETL and historical storage:**
-  - Historical data migrated to **cloud cold storage** (e.g., Google Cloud).
-  - Maintains regulatory compliance for minimum two months of online data retention.
-
-- **Parallel processing:**
-  - OLAP queries executed in engines like BigQuery.
-  - ETL processes for BI without impacting the transactional database.
+Thus, a distributed model meets Kine’s needs for real-time operations, scalability, and compliance more efficiently than a purely parallel system.
 
 ---
 
