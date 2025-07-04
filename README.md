@@ -1,5 +1,5 @@
 # Kine – Replicación académica de la base de datos de Nequi  
-**Bases de Datos II · Semestre 2025‑I**
+**Bases de Datos II · Semestre 2025‑I UDFJD**
 
 **Autores**
 - José Jesús Céspedes Rivera - 20211020118  
