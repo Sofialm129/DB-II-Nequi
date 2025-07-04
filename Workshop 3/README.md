@@ -1,4 +1,4 @@
-## Nequi System — Workshop 3
+## Kine System — Workshop 3
 
 **Databases II — 2025-I**  
 Universidad Distrital Francisco José de Caldas  
