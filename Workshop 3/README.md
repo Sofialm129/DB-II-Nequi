@@ -30,11 +30,29 @@ This project addresses Workshop 3, focused on Nequi, a digital financial platfor
 
 ##  Distributed Database Design
 
-- **PostgreSQL** → Core transactional data.
-- **MongoDB** → Flexible, semi-structured data (support, logs).
-- **Sharding** → PostgreSQL by `account_id`; MongoDB by `user_id`.
-- **Replication** → Regional replicas for high availability.
-- **Cold Storage** → Historical data offloaded to cloud storage (e.g., BigQuery).
+###  Proposed Distributed Architecture
+
+A **distributed architecture** is proposed for Nequi, based on:
+
+- **Polyglot Persistence:**
+  - **PostgreSQL** → For critical relational data: accounts, transactions, credits.
+  - **MongoDB** → For semi-structured data: support, PQR, logs.
+
+- **Geographical replication:**
+  - Nodes distributed in Bogotá, Medellín, and abroad.
+  - High availability in case of regional failures.
+
+- **Horizontal partitioning (Sharding):**
+  - PostgreSQL partitioned by `account_id` or region.
+  - MongoDB sharded by `user_id`.
+
+- **ETL and historical storage:**
+  - Historical data migrated to **cloud cold storage** (e.g., Google Cloud).
+  - Maintains regulatory compliance for minimum two months of online data retention.
+
+- **Parallel processing:**
+  - OLAP queries executed in engines like BigQuery.
+  - ETL processes for BI without impacting the transactional database.
 
 ---
 
